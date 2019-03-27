@@ -1,0 +1,58 @@
+#new-salem .maeve-dev1 {background: rgba(166, 171, 201, 0.65); border: 1px solid #a6abc9;}
+#phantomsgate .maeve-dev1 {background: rgba(213, 162, 162, 0.65); border: 1px solid #d5a2a2;}
+#visiting .maeve-dev1 {background: rgba(190, 143, 177, 0.65); border: 1px solid #be8fb1;}
+#hollow .maeve-dev1 {background: rgba(227, 173, 210, 0.65); border: 1px solid #e3add2;}
+#underbelly .maeve-dev1 {background: rgba(213, 210, 162, 0.65); border: 1px solid #d5d2a2;}
+#ruby-coast .maeve-dev1 {background: rgba(162, 213, 199, 0.65); border: 1px solid #a2d5c7;}
+#forest .maeve-dev1 {background: rgba(161, 190, 143, 0.65); border: 1px solid #a1be8f;}
+
+.maeve-dev1 {
+width: 452px;
+margin: 0 auto;
+padding: 20px;
+}
+.maeve-dev2 {
+width: 350px;
+border: 1px solid #888;
+background-color: #f6f6f6;
+padding: 50px;
+}
+.md-inner {
+width: 350px;
+overflow-x: hidden;
+}
+
+.md-inner.dev_img img {width: 350px; margin-bottom: 10px;}
+.md-inner.dev_img img:last-of-type {margin-bottom: 0px!important;}
+
+.md-inner.dev_mood img {width: 100px; margin-right: 21px; margin-bottom: 21px;}
+.md-inner.dev_mood img:nth-of-type(3), .md-inner.dev_mood img:nth-of-type(6), .md-inner.dev_mood img:nth-of-type(9) {margin-right: 0px!important;}
+.md-inner.dev_mood img:nth-of-type(7), .md-inner.dev_mood img:nth-of-type(8), .md-inner.dev_mood img:nth-of-type(9) {margin-bottom: 0px!important;}
+
+.md-inner.dev_set img {width: 168px; margin-top: 10px;}
+.md-inner.dev_set img:nth-of-type(odd){margin-right: 10px;}
+.md-inner.dev_set img:nth-of-type(1), .md-inner.dev_set img:nth-of-type(2) {margin-top: 0px!important;}
+
+.md-inner.dev_quote {text-align: justify; color: #888;}
+.md-inner.dev_quote short {
+    display: block;
+    text-align: center;
+    font-family: 'Poppins', serif;
+    letter-spacing: -1px;
+    font-style: italic;
+    font-size: 25px;
+    line-height: 100%;
+}
+.md-inner.dev_quote .dev_source {
+border-top: 1px solid #ccc;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-right: 10px;
+    text-align: right;
+    text-transform: lowercase;
+    font-family: 'Poppins', serif;
+    color: white;
+    font-style: italic;
+    word-spacing: 3px;
+    text-shadow: -1px 0 #999, 0 1px #999, 1px 0 #999, 0 -1px #999;
+}
