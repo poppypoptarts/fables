@@ -1,0 +1,153 @@
+.audiojs audio { position: absolute; left: -1px; }
+.audiojs {
+  width: 460px;
+  height: 36px;
+  background: #404040;
+  overflow: hidden;
+  font-family: monospace;
+  font-size: 12px;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #444), color-stop(0.5, #555), color-stop(0.51, #444), color-stop(1, #444));
+  background-image: -moz-linear-gradient(center top, #444 0%, #555 50%, #444 51%, #444 100%);
+  -webkit-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3); }
+.audiojs .play-pause { width: 25px; height: 40px; padding: 4px 6px; margin: 0px; float: left; overflow: hidden; border-right: 1px solid #000; }
+.audiojs p { display: none; width: 25px; height: 40px; margin: 0px; cursor: pointer; }
+.audiojs .play { display: block; }
+.audiojs .scrubber { position: relative; float: left; width: 280px; background: #5a5a5a; height: 14px; margin: 10px; border-top: 1px solid #3f3f3f; border-left: 0px; border-bottom: 0px; overflow: hidden; }
+.audiojs .progress { position: absolute; top: 0px; left: 0px; height: 14px; width: 0px; background: #a79baa; z-index: 1;           background: #a79baa; }
+.audiojs .loaded { position: absolute; top: 0px; left: 0px; height: 14px; width: 0px; background: #ccc;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ccc), color-stop(0.5, #ccc), color-stop(0.51, #ccc), color-stop(1, #ccc));           background-image: -moz-linear-gradient(center top, #ccc 0%, #ccc 50%, #ccc 51%, #ccc 100%); }
+.audiojs .time { float: left; height: 36px; line-height: 36px; margin: 0px 0px 0px 6px; padding: 0px 6px 0px 12px; border-left: 1px solid #000; color: #ddd; text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5); }
+.audiojs .time em { padding: 0px 2px 0px 0px; color: #f9f9f9; font-style: normal; }
+.audiojs .time strong { padding: 0px 0px 0px 2px; font-weight: normal; }
+.audiojs .error-message { float: left; display: none; margin: 0px 10px; height: 36px; width: 400px; overflow: hidden; line-height: 36px; white-space: nowrap; color: #fff;           text-overflow: ellipsis; -o-text-overflow: ellipsis; -icab-text-overflow: ellipsis; -khtml-text-overflow: ellipsis; -moz-text-overflow: ellipsis; -webkit-text-overflow: ellipsis; }
+.audiojs .error-message a { color: #eee; text-decoration: none; padding-bottom: 1px; border-bottom: 1px solid #999; white-space: wrap; }
+.audiojs .play { background: url("https://files.jcink.net/uploads/synthcity/audiojs/player_graphics.gif") -2px -1px no-repeat; }         .audiojs .loading { background: url("https://files.jcink.net/uploads/synthcity/audiojs/player_graphics.gif") -2px -31px no-repeat; }         .audiojs .error { background: url("https://files.jcink.net/uploads/synthcity/audiojs/player_graphics.gif") -2px -61px no-repeat; }         .audiojs .pause { background: url("https://files.jcink.net/uploads/synthcity/audiojs/player_graphics.gif") -2px -91px no-repeat; }                 .playing .play, .playing .loading, .playing .error { display: none; }         .playing .pause { display: block; }                 .loading .play, .loading .pause, .loading .error { display: none; }         .loading .loading { display: block; }                 .error .time, .error .play, .error .pause, .error .scrubber, .error .loading { display: none; }         .error .error { display: block; }         .error .play-pause p { cursor: auto; }         .error .error-message { display: block; }
+
+#new-salem .maeve-dev1{background:rgba(166,171,201,.65);border:1px solid #a6abc9}
+#phantomsgate .maeve-dev1{background:rgba(213,162,162,.65);border:1px solid #d5a2a2}
+#visiting .maeve-dev1{background:rgba(190,143,177,.65);border:1px solid #be8fb1}
+#hollow .maeve-dev1{background:rgba(227,173,210,.65);border:1px solid #e3add2}
+#underbelly .maeve-dev1{background:rgba(213,210,162,.65);border:1px solid #d5d2a2}
+#ruby-coast .maeve-dev1{background:rgba(162,213,199,.65);border:1px solid #a2d5c7}
+#forest .maeve-dev1{background:rgba(161,190,143,.65);border:1px solid #a1be8f}
+
+#new-salem .audiojs .progress { background: #a6abc9; }
+#phantomsgate .audiojs .progress { background: #d5a2a2; }
+#visiting .audiojs .progress { background: #be8fb1; }
+#hollow .audiojs .progress { background: #e3add2; }
+#underbelly .audiojs .progress { background: #d5d2a2; }
+#ruby-coast .audiojs .progress { background: #a2d5c7; }
+#forest .audiojs .progress { background: #a1be8f; }
+
+.maeve-dev1{width:452px;margin:0 auto;padding:20px}
+.maeve-dev2{width:350px;border:1px solid #888;background-color:#f6f6f6;padding:50px;}
+.md-inner2{width:350px; min-height: 100px;}
+.play_title {
+font-family: 'Poppins', serif;
+    color: white;
+    letter-spacing: -1px;
+    font-style: italic;
+    font-size: 20px;
+    text-shadow: -1px 0 #888, 0 1px #888, 1px 0 #888, 0 -1px #888;
+    word-spacing: 3px;
+    text-transform: lowercase;
+    background: #f2f2f2;
+    border: 1px solid #888;
+    text-align: right;
+    padding: 20px 10px;
+    position: relative;
+    width: 430px;
+    left: -51px;
+    margin-bottom: 50px;
+}
+.dev_play .song_contain:nth-of-type(0) {margin-top: 0px;}
+.dev_play .song_contain {
+width: 277px;
+    height: 74px;
+    position: relative;
+margin-top: 20px;
+}
+.song_detail {
+position: absolute;
+    bottom: 36px;
+    left: 39px;
+    padding: 10px 0px;
+    width: 310px;
+    z-index: 6;
+    border-bottom: 1px solid #888888;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    font-family: 'ABeeZee', sans-serif;
+    font-weight: 500;
+    font-size: 8px;
+    color: #888;
+    line-height: 100%;
+}
+.dev_play .audiojs {
+    width: 348px!important;
+}
+.dev_play .audiojs .scrubber {
+width: 328px!important;
+}
+
+.audiojs {
+    width: 460px;
+    height: 72px!important;
+    background: #f2f2f2!important;
+    border: 1px solid #888888;
+    margin: 0px auto;
+    position: relative;
+    overflow: hidden;
+    font-family: monospace;
+    font-size: 12px;
+    background-image: none!important;
+    background-image: none!important;
+    -webkit-box-shadow: none!important;
+    -moz-box-shadow: none!important;
+    -o-box-shadow: none!important;
+    box-shadow: none!important;
+}
+.audiojs .play-pause {
+    width: 25px;
+    height: 28px!important;
+    padding: 4px 6px;
+    margin: 0px;
+    float: left;
+    overflow: hidden;
+    border-right: 1px solid #888888!important;
+    border-bottom: 1px solid #888888;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.audiojs .scrubber {
+    position: relative;
+    float: left;
+    width: 439px!important;
+    background: #d6d6d6;
+    height: 14px;
+    margin: 10px;
+    border-top: 1px solid #f2f2f2;
+    border-left: 0px;
+    border-bottom: 0px;
+    overflow: hidden;
+    top: 36px!important;
+}
+.audiojs .time {
+    float: left;
+    height: 36px;
+    line-height: 36px;
+    margin: 0px 0px 0px 6px;
+    padding: 0px 6px 0px 12px;
+    border-left: 1px solid #272727!important;
+    border-bottom: 1px solid #272727;
+    color: #fff!important;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 359px;
+}
