@@ -87,6 +87,18 @@ position: absolute;
     color: #888;
     line-height: 100%;
 }
+.song_lyrics {
+font-family: 'ABeeZee', sans-serif;
+    font-weight: 500;
+    font-size: 10px;
+    color: #888;
+    border: 1px solid #888;
+    border-left: none;
+    border-right: none;
+    padding: 5px;
+    height: 40px;
+    overflow: auto;
+}
 .dev_play .audiojs {
     width: 348px!important;
 }
